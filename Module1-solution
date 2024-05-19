@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="LunchCheck">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunch Check</title>
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body>
+    <div ng-controller="LunchCheckController">
+        <h1>Lunch Checker</h1>
+        <input type="text" placeholder="Enter comma-separated items" ng-model="lunchItems">
+        <button ng-click="checkLunch()">Check If Too Much</button>
+        <div>{{message}}</div>
+    </div>
+    
+    <!-- Import AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <!-- Import app.js -->
+    <script src="app.js"></script>
+</body>
+</html>
